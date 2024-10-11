@@ -45,20 +45,20 @@ public class Main {
                         System.out.println("¿Quiere ver cada paso?");
                         System.out.println("1. Sí");
                         System.out.println("2. No");
-                        boolean verPasos = scanner.nextInt() == 1;
+                        boolean mostrarLogs = scanner.nextInt() == 1;
 
                         switch (opcion) {
                             case 1:
-                                MetodosOrdenamiento.burbuja(arreglo, ascendente, verPasos);
+                                MetodosOrdenamiento.burbuja(arreglo, ascendente, mostrarLogs);
                                 break;
                             case 2:
-                                MetodosOrdenamiento.seleccion(arreglo, ascendente, verPasos);
+                                MetodosOrdenamiento.seleccion(arreglo, ascendente, mostrarLogs);
                                 break;
                             case 3:
-                                MetodosOrdenamiento.insercion(arreglo, ascendente, verPasos);
+                                MetodosOrdenamiento.insercion(arreglo, ascendente, mostrarLogs);
                                 break;
                             case 4:
-                                MetodosOrdenamiento.burbujaMejorado(arreglo, ascendente, verPasos);
+                                MetodosOrdenamiento.burbujaMejorado(arreglo, ascendente, mostrarLogs);
                                 break;
                         }
 
