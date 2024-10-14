@@ -82,9 +82,9 @@ public class MetodosOrdenamiento {
     // Método Burbuja Mejorado
     public static void burbujaMejorado(int[] arr, boolean ascendente, boolean logs) {
         int n = arr.length;
-        boolean swapped;
+        boolean cambio;
         for (int i = 0; i < n - 1; i++) {
-            swapped = false;
+         cambio = false;
             for (int j = 0; j < n - i - 1; j++) {
                 if (logs) {
                     System.out.println("i=" + i + " j=" + j + " [i]=" + arr[i] + " [j]=" + arr[j]);
@@ -96,13 +96,13 @@ public class MetodosOrdenamiento {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
-                    swapped = true;
+                 cambio = true;
                     if (logs) {
                         System.out.println("\t--------" + Arrays.toString(arr));
                     }
                 }
             }
-            if (!swapped) break;  
+            if ( cambio) break;  
         }
     }
 
